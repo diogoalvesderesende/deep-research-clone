@@ -170,7 +170,7 @@ def main():
                 model=MODEL,
                 input=[
                     {"role": "assistant", "content": f"Current data: {json.dumps(collected)}"},
-                    {"role": "user", "content": ("We still haven't met the goal. Give 5 more, new, high-value web search queries only as a JSON list.")}
+                    {"role": "user", "content": (f"We still haven't met the goal. Give 5 more, new, high-value web search queries only as a JSON list to complete {goal}.")}
                 ],
                 previous_response_id=clarify_id
             )
